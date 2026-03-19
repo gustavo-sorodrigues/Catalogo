@@ -1,0 +1,175 @@
+.custom-modal {
+  display: none;
+  position: fixed;
+  z-index: 1050;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(3px);
+  overflow-y: auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.custom-modal-content {
+  background-color: #0a0a0a;
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  animation: modalFadeIn 0.3s ease-out;
+  color: #f0f0f0;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.custom-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #444;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+}
+
+.custom-modal-header h5 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffc857;
+  text-shadow: 0 0 4px #ffc857;
+}
+
+.custom-close {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #ffc857;
+  font-weight: bold;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+
+.custom-close:hover {
+  background-color: #ffc857;
+  color: #0a0a0a;
+}
+
+.custom-modal-body {
+  line-height: 1.6;
+  color: #f0f0f0;
+}
+
+.custom-ratio {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.custom-ratio iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.custom-comment {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.custom-comment img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.custom-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.custom-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #ffc857;
+}
+
+.custom-form input[type="number"],
+.custom-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: #111;
+  color: #f0f0f0;
+  transition: border 0.2s;
+}
+
+.custom-form input[type="number"]:focus,
+.custom-form textarea:focus {
+  outline: none;
+  border-color: #ffc857;
+  box-shadow: 0 0 8px rgba(255, 197, 87, 0.3);
+}
+
+.custom-form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.custom-btn {
+  background-color: #ffc857;
+  color: #0a0a0a;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.custom-btn:hover {
+  background-color: #e6b845;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #444;
+  margin: 1.5rem 0;
+}
+
+.custom-modal-header h5 {
+  font-size: 1.3rem;
+}

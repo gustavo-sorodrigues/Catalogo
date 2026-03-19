@@ -1,0 +1,76 @@
+body {
+  background-image: linear-gradient(to top, #0c0c0c 0%, #1f2a38 100%);
+  color: #f0f0f0;
+  font-family: "Poppins", sans-serif;
+}
+
+.card {
+  background-color: #121212;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(255, 197, 87, 0.2);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px #ffc857;
+}
+
+.form-control {
+  background-color: #1a1a1a;
+  border: 1px solid #444;
+  color: #f0f0f0;
+}
+
+.form-control:focus {
+  border-color: #ffc857;
+  box-shadow: 0 0 8px #ffc857;
+}
+
+.form-label {
+  color: #ffc857;
+}
+
+.nav-tabs .nav-link {
+  color: #ffc857;
+}
+
+.nav-tabs .nav-link.active {
+  color: #ffc857;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #ffc857;
+  color: #121212;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #ffc857;
+  color: black !important;
+}
+
+.btn-success {
+  background-color: #ffc857 !important;
+  color: #000000ff;
+  font-weight: bold;
+}
+
+.btn-sucess:hover {
+  background-color: #ffc857;
+  color: black !important;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #ffc857;
+  opacity: 0.5;
+}
+
+h4 {
+  color: #ffc857;
+}
+
+strong {
+  color: #ffc857;
+}
